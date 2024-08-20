@@ -1,2 +1,187 @@
-here we will write main code of css for index main html file
-hiii
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    border: 0px;
+}
+
+.buildinglogo {
+    width: 100%;
+    position: relative;
+}
+
+.buildinglogo img {
+    width: 90%;
+    margin: 5%;
+}
+
+.buildinglogo button {
+    position: absolute;
+    bottom: 10%;
+    left: 15%;
+    z-index: 1;
+    padding: 10px 20px 10px 20px;
+    color: aliceblue;
+    font-size: large;
+    font-weight: bolder;
+    border-radius: 25px;
+    background-color: #E3A72F;
+
+}
+
+.info {
+    width: 70%;
+    margin: auto;
+}
+
+.info p {
+    font-size: larger;
+    text-align: center;
+}
+
+.ranker {
+    text-align: center;
+    padding: 2%;
+    color: red;
+    font-size: 3em;
+    font-weight: bolder;
+}
+
+.toppers {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.toppers div img {
+    height: 150px;
+    width: 150px%;
+    border-radius: 50%;
+}
+
+.toppers div {
+    border-radius: 5%;
+    width: 25%;
+    background-color: #f0f0f0;
+    padding: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.toppers div h1,
+h2 {
+    text-align: center;
+}
+
+.speciality {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    align-items: center;
+    row-gap: 5%;
+    column-gap: 10%;
+}
+
+.speciality div {
+    display: flex;
+    align-items: center;
+}
+
+.speciality div img {
+    height: 100px;
+    width: 100px;
+}
+
+.speciality div p {
+    font-weight: bolder;
+}
+
+.limitless {
+    height: 300px;
+    display: flex;
+    align-items: center;
+    background-color: wheat;
+}
+
+.limitless pre {
+    font-size: 40px;
+    font-weight: bolder;
+    padding-left: 10%;
+}
+
+.founder {
+    display: flex;
+    width: 80%;
+    padding: 50px 0px 50px 0px;
+    margin: auto;
+}
+
+.founder div {
+    width: 50%;
+}
+
+.message p {
+    font-size: 25px;
+}
+
+.message h1 {
+    color: blue;
+    width: 100%;
+    margin: 10%;
+}
+
+.message button {
+    margin-top: 5%;
+    padding: 10px 20px 10px 20px;
+    color: aliceblue;
+    font-size: large;
+    font-weight: bolder;
+    border-radius: 25px;
+    background-color: #E3A72F;
+}
+
+.img {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.img img {
+    width: 40%;
+}
+
+.facilities{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.facilities div {  
+    width: 100%;
+    height: 250px;
+    border: 1px solid black;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    font-weight: bolder;
+}
+.facilities div:hover {
+    cursor: pointer;
+    background-color: rgba(161, 80, 255,.5);
+}
+
+.feedback {
+    display: flex;
+}
+.feedback div {
+    width: 50%;
+}
+
+.feedback div img {
+    height: 50px;
+    width: 80px;
+    border-radius: 50%;
+}
