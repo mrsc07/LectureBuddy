@@ -54,7 +54,7 @@
 
 .toppers div img {
     height: 150px;
-    width: 150px%;
+    width: 150px;
     border-radius: 50%;
 }
 
@@ -177,11 +177,52 @@ h2 {
     display: flex;
 }
 .feedback div {
+    display: flex;
     width: 50%;
+    flex-direction: column;
+    align-items: center;
+    
 }
 
-.feedback div img {
+.feedback div p {
+    width: 70%;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.in {
+    display: flex;
+    flex-direction: row;
+}
+.feedback div div img {
     height: 50px;
     width: 80px;
     border-radius: 50%;
+}
+
+.footer {
+    height: 200px;
+    display: flex;
+    align-items: center;
+    background-color: wheat;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+}
+.footer h1 {
+}
+.footer button {
+    margin-top:10px ;
+    padding: 10px 20px 10px 20px;
+    color: white;
+    font-size: large;
+    font-weight: bolder;
+    border-radius: 25px;
+    background-color: #E3A72F;
+}
+
+.lastline {
+    margin: 10px;
+    text-align: center;
 }
