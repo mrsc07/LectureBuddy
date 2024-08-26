@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Sarhad School</title>
+    <meta name="description" content="Sarhad School offers a CBSE curriculum with a focus on all-round development for students from J&K and Pune. Learn more about our top rankers, facilities, and more.">
+    <link rel="shortcut icon" href="sarhadfavi.png" type="image/x-icon">
+    <style>
+        /* General Reset and Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Building Logo Section */
+.buildinglogo {
+    width: 100%;
+    position: relative;
+    text-align: center; /* Center content */
+}
+
+.buildinglogo img {
+    width: 90%;
+    max-width: 400px; /* Limit maximum width */
+    margin: 0 auto; /* Center image */
+    display: block;
+}
+
+.buildinglogo button {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    color: aliceblue;
+    font-size: large;
+    font-weight: bolder;
+    border-radius: 25px;
+    background-color: #E3A72F;
+    cursor: pointer;
+}
+
+/* Info Section */
+.info {
+    width: 90%;
+    margin: auto;
+}
+
+.info p {
+    font-size: larger;
+    text-align: center;
+}
+
+/* Ranker Section */
+.ranker {
+    text-align: center;
+    padding: 2%;
+    color: red;
+    font-size: 2em; /* Adjusted for smaller screens */
+    font-weight: bolder;
+}
+
+/* Toppers Section */
+.toppers {
+    display: flex;
+    flex-direction: column; /* Stack vertically */
+    align-items: center;
+}
+
+.toppers div {
+    border-radius: 5%;
+    width: 80%; /* Adjusted for smaller screens */
+    background-color: #f0f0f0;
+    padding: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 20px; /* Space between items */
+}
+
+.toppers div img {
+    height: 120px; /* Adjusted for smaller screens */
+    width: 120px;
+    border-radius: 50%;
+}
+
+.toppers div h1,
+h2 {
+    text-align: center;
+}
+
+/* Speciality Section */
+.speciality {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Responsive columns */
+    gap: 10%;
+}
+
+.speciality div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.speciality div img {
+    height: 80px; /* Adjusted for smaller screens */
+    width: 80px;
+}
+
+.speciality div p {
+    font-weight: bolder;
+    text-align: center; /* Center text */
+}
+
+/* Limitless Section */
+.limitless {
+    height: 250px; /* Adjusted height */
+    display: flex;
+    align-items: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(classroombg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.limitless pre {
+    color: white;
+    font-size: 30px; /* Adjusted font size */
+    font-weight: bolder;
+    padding-left: 5%; /* Adjusted padding */
+    text-align: center; /* Center text */
+}
+
+/* Founder Section */
+.founder {
+    display: flex;
+    flex-direction: column; /* Stack vertically on small screens */
+    width: 90%;
+    padding: 30px 0;
+    margin: auto;
+}
+
+.founder .message {
+    margin-bottom: 20px; /* Space between message and images */
+}
+
+.message p {
+    font-size: 18px; /* Adjusted for smaller screens */
+}
+
+.message h1 {
+    color: blue;
+    width: 100%;
+    margin: 5%; /* Adjusted margin */
+}
+
+.message button {
+    margin-top: 5%;
+    padding: 10px 20px;
+    color: aliceblue;
+    font-size: large;
+    font-weight: bolder;
+    border-radius: 25px;
+    background-color: #E3A72F;
+    cursor: pointer;
+}
+
+.img {
+    display: flex;
+    flex-direction: column; /* Stack images vertically */
+    align-items: center;
+    justify-content: center;
+}
+
+.img img {
+    width: 80%; /* Adjusted width */
+    max-width: 150px; /* Limit maximum width */
+    margin: 5px 0; /* Space between images */
+}
+
+/* Facilities Section */
+.facilities {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Responsive columns */
+    gap: 10%;
+}
+
+.facilities div {
+    height: 200px; /* Adjusted height */
+    border: 1px solid black;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    font-weight: bolder;
+    text-align: center; /* Center text */
+}
+
+.facilities div:hover {
+    cursor: pointer;
+    background-color: rgba(161, 80, 255, .5);
+}
+
+/* Feedback Section */
+.feedback {
+    display: flex;
+    flex-direction: column; /* Stack vertically on small screens */
+    align-items: center;
+}
+
+.feedback div {
+    width: 90%; /* Adjusted width */
+    margin-bottom: 20px; /* Space between feedback items */
+}
+
+.feedback div p {
+    width: 100%; /* Full width for text */
+    padding: 20px;
+    text-align: center;
+}
+
+.in {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.feedback div div img {
+    height: 40px; /* Adjusted height */
+    width: 60px; /* Adjusted width */
+    border-radius: 50%;
+}
+
+/* Enroll Now Section */
+.enrollnow {
+    background: linear-gradient(rgba(15, 80, 159, .8), rgba(15, 80, 159, .8)), url(profesionalsbg.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    height: 180px; /* Adjusted height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    text-align: center; /* Center text */
+}
+
+.enrollnow button {
+    cursor: pointer;
+    margin-top: 10px;
+    padding: 10px 20px;
+    color: white;
+    font-size: large;
+    font-weight: bolder;
+    border-radius: 25px;
+    background-color: #E3A72F;
+}
+
+/* Footer Section */
+.footer {
+    display: flex;
+    flex-direction: column; /* Stack vertically on small screens */
+    align-items: center;
+    padding: 20px;
+}
+
+.footer div {
+    width: 100%;
+    margin: 10px 0;
+}
+
+.footer .map iframe {
+    width: 100%;
+    height: 200px; /* Adjusted height */
+}
+
+/* Last Line */
+.lastline {
+    margin: 10px;
+    text-align: center;
+}
+
+/* Media Queries for Small Screens */
+@media (max-width: 412px) {
+    .info p, .message p, .ranker, .toppers div h1, .toppers div h2, .speciality div p {
+        font-size: smaller; /* Adjust font size */
+    }
+    
+    .buildinglogo button, .message button, .enrollnow button {
+        font-size: medium; /* Adjust font size */
+        padding: 8px 16px; /* Adjust padding */
+    }
+
+    .limitless pre {
+        font-size: 25px; /* Adjust font size */
+    }
+}
+</style>
+</head>
+
+<body>
+    <div class="buildinglogo">
+        <img src="sarhadbuilding.png" alt="Sarhad School Building">
+        <button>Enroll Today</button>
+    </div>
+    <div class="info">
+        <p>Sarhad School is a co-educational school that follows the ‘CBSE’ curriculum (Affiliation No.:1130155). This school was started for violence-affected J&K and other local students. It has a roll of 100 students from J&K and 1000 students from Pune. The orphaned J&K students receive education, including lodging and boarding, free of any costs. The school aims at all-round development and creating moral citizens who have the welfare of their fellow beings in mind. Education should not be a burden but rather an enjoyable pursuit that enriches the child's life.</p>
+        <p class="line">______</p>
+    </div>
+    <div class="ranker">
+        <p>OUR 10TH TOP RANKERS (2021-2022)</p>
+    </div>
+    <div class="toppers">
+        <div>
+            <img src="toper1.png" alt="Miss. Mansavi Sontakke">
+            <h2>Miss. Mansavi Sontakke</h2>
+            <h1>97.00%</h1>
+        </div>
+        <div>
+            <img src="toper2.png" alt="Miss. Arya Kadam">
+            <h2>Miss. Arya Kadam</h2>
+            <h1>96.04%</h1>
+        </div>
+        <div>
+            <img src="toper3.png" alt="Miss. Shreya Wasvand">
+            <h2>Miss. Shreya Wasvand</h2>
+            <h1>96.00%</h1>
+        </div>
+    </div>
+    <div class="speciality">
+        <div>
+            <img src="CBSEschool.jpg" alt="CBSE School">
+            <p>CBSE School</p>
+        </div>
+        <div>
+            <img src="3WorldLanguages.jpg" alt="3 World Languages">
+            <p>3 World Languages</p>
+        </div>
+        <div>
+            <img src="SmartClasses.jpg" alt="Smart Classes">
+            <p>Smart Classes</p>
+        </div>
+        <div>
+            <img src="250+Course.jpg" alt="250+ Courses">
+            <p>250+ Courses</p>
+        </div>
+        <div>
+            <img src="studentsclub.jpg" alt="Student Clubs">
+            <p>Student Clubs</p>
+        </div>
+        <div>
+            <img src="financialaid.jpg" alt="Financial Aid">
+            <p>Financial Aid</p>
+        </div>
+    </div>
+    <div class="limitless">
+        <pre>Limitless 
+learning and 
+opportunities</pre>
+    </div>
+    <div class="founder">
+        <div class="message">
+            <h1>Message from the founders</h1>
+            <p>Education is an all-encompassing word. It’s not just confined to books and degrees. The real objective of education is to emancipate an individual and blossom his/her personality to the fullest. ‘Education liberates’, Carl Marx’s pithy comment upon the exact function of education underlines its enormous role in the life of a person. If one’s educated, one’s liberated. Education liberates a person from all pettiness and prejudices that pull all of us down. Education makes one aware of his/her potential and nurtures and nourishes the immense possibilities an individual is endowed with. A child is a ‘rough diamond’. Proper education hones the facets of this ‘rough diamond’ and makes it ‘Kohinoor’, ‘Cullinan’ or ‘Sancy’, three of the greatest diamonds.</p>
+            <button>Learn More</button>
+        </div>
+        <div class="img">
+            <img src="naharsir.jpg" alt="Nahar Sir">
+            <img src="missnahar.jpg" alt="Miss Nahar">
+        </div>
+    </div>
+    <div class="facilities">
+        <div>CLASSROOM</div>
+        <div>ART</div>
+        <div>SCHOOL LIBRARY</div>
+        <div>SPORT COURT</div>
+    </div>
+    <div class="feedback">
+        <div>
+            <p>“Sarhad School is undoubtedly the best School in Pune for its commitment and responsibility towards students.”</p>
+            <div class="in">
+                <img src="feedback1.jpg" alt="Nita Sharma">
+                <h4>Nita Sharma</h4>
+            </div>
+        </div>
+        <div>
+            <p>“What I am today is because of Sarhad School. The teachers are very helpful and committed towards students.”</p>
+            <div class="in">
+                <img src="feedback2.jpg" alt="Anita Patil">
+                <h4>Anita Patil</h4>
+            </div>
+        </div>
+    </div>
+    <div class="enrollnow">
+        <h1>Start your future today</h1>
+        <button>Enroll Now</button>
+    </div>
+    <footer class="footer">
+        <div class="quicklink">
+            <h4>Quick Links</h4>
+            <p><a href="#about">About Sarhad Foundation</a></p>
+            <p><a href="#contact">Contact Us</a></p>
+        </div>
+        <div class="contact-us">
+            <h4>Contact Us</h4>
+            <h4>Sarhad College of Arts, Commerce and Science</h4>
+            <p>Sr.No.79,80,81,76/4 (new), Near Rajaram Gas Agency, Pune-Kashmir Maitri Chowk, Katraj, Pune 411046.</p>
+            <p>(020)24368621</p>
+            <p>sarhadcollege@gmail.com</p>
+        </div>
+        <div class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3784.633965523349!2d73.8539919!3d18.454921299999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2eac6040cb269%3A0xac653591baaaa13e!2sSarhad%20College%20of%20Arts%2CCommerce%20and%20Science!5e0!3m2!1sen!2sin!4v1724219909025!5m2!1sen!2sin"
+                width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </footer>
+    <p class="lastline">Copyright © 2022 SARHAD SCHOOL CBSE | Powered by IT SARHAD</p>
+</body>
+
+</html>
