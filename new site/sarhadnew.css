@@ -1,0 +1,200 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+.welcome {
+background: radial-gradient(circle, rgba(255,249,145,1) 24%, rgba(255,194,113,1) 38%, rgba(255,155,91,1) 63%);
+display: grid;
+justify-items: center;
+align-items: center;
+justify-items: center;
+position: relative;
+}
+.welcome img{
+    opacity: 0.6;
+}
+.welcome .p1 {
+    align-items: center;
+    position: absolute;
+    bottom: 50%;
+}
+.welcome .p2 {
+    align-items: center;
+    position: absolute;
+    bottom: 45%;
+}
+.welcome button {
+    color: white;
+    padding: 5px 20px;
+    background-color: black;
+    border-radius: 5px;
+    margin: 10px;
+}
+.info .i_inner {
+    display: flex;
+    width: 80%;
+    height: 650px;
+    margin: auto;
+}
+.info .i_inner .i_left {
+    width: 50%;
+} 
+.info .i_inner .i_left p {
+    padding: 10% 10% 5% 10%;
+    font-size: 30px;
+}
+.info .i_inner .i_left button {
+    margin: 0% 10% 10% 10%;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    font-size: large;
+}
+.info .i_inner .i_right {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.info .i_inner .i_right .images {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.info .i_inner .i_right .images .img1 {
+    position: absolute;
+    top: 10%;
+    left: 2%;
+}
+.info .i_inner .i_right .images .img2 {
+    position: absolute;
+    bottom: 10%;
+    right: 2%;
+}
+.whyus{
+    width: 100%;
+    display: inline-block;
+    margin:40px  auto;
+    text-align: center;
+}
+.why_us_section {
+    color: #612734 ;
+    display: flex;
+    justify-content: space-evenly;
+    justify-items: center;
+}
+.why_us_section .w_inner{
+    width: 20%;
+    /* margin: 100px; */
+    text-align: center;
+}
+.why_us_section .w_inner h4{
+    font-size: 30px;
+}
+.why_us_section .w_inner button{
+    color: #612734 ;
+    margin: 5px;
+    font-weight: bold;
+}
+.personalized {
+    margin: 50px auto;
+    width: 80%;
+    height: 400px;
+    display: flex;
+}
+.personalized .p_left {
+    position: relative;
+    width: 50%;
+}
+.personalized .p_right {
+    width: 50%;
+    position: relative;
+}
+.personalized .p_left .images1 {
+    position: absolute;
+    top:1px;
+    left:10px;
+}
+.personalized .p_left .images2 {
+    position: absolute;
+    bottom: 1px;
+    right: 10px;
+}
+.personalized .p_right .text {
+    width: 80%;
+    margin: 80px;
+}
+.personalized .p_right .text h4 {
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+.personalized .p_right .text p {
+    margin-bottom: 15px;
+}
+.personalized .p_right .text button {
+    padding: 10px 20px;
+    color: white;
+    background-color: black ;
+} 
+.testimonials {
+    display: inline-block;
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    font-size: 30px;
+    text-align: center;
+}
+.testimonials_section {
+    width: 80%;
+    height: 400px;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+.testimonials_section .t_inner {
+    margin: 10px;
+    width: 20%;
+    height: 150px;
+    background-image: url(images/yellowglow.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+footer {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    height: 450px;
+    background-image: url(images/footerbg.png);
+    background-size: cover;
+}
+footer .footer_left {
+    width: 50%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+footer .footer_right {
+    position: relative;
+    width: 50%;
+}
+footer .footer_right .f_inner_1 {
+    margin-top: 100px;
+    margin-left: 40px;
+
+}
+footer .footer_right .f_inner_2 {
+    margin-top: 20px;
+    display: inline-block;
+    margin-left: 40px;
+}
+footer .footer_right .f_inner_3 {
+    position: absolute;
+    left: 50%;
+    bottom: 36%;
+}
+footer .footer_right .f_inner_3 img {
+    margin-right: 5px;
+    margin-top: 5px;
+}
